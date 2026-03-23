@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pastel Intro Card</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #fdfbfb, #ebedee);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        width: 700px;
+        background: #cdb4db; /* pastel purple */
+        padding: 20px;
+        border-radius: 15px;
+        position: relative;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    /* Header */
+    .header {
+        background: #ffc8dd; /* pastel pink */
+        text-align: center;
+        padding: 12px;
+        font-weight: bold;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        transition: transform 0.3s;
+    }
+
+    .header:hover {
+        transform: scale(1.05);
+    }
+
+    /* Profile section */
+    .profile {
+        background: #ffafcc;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 15px;
+        transition: transform 0.3s;
+    }
+
+    .profile:hover {
+        transform: translateY(-5px);
+    }
+
+    .profile img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #bde0fe;
+        object-fit: cover;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .profile p {
+        margin: 0;
+        color: #333;
+    }
+
+    /* Side box */
+    .side-box {
+        position: absolute;
+        left: -70px;
+        top: 120px;
+        width: 60px;
+        height: 60px;
+        background: #a2d2ff;
+        border-radius: 10px;
+        animation: bounce 2s infinite;
+    }
+
+    /* Cards section */
+    .cards {
+        display: flex;
+        gap: 15px;
+    }
+
+    .card {
+        flex: 1;
+        background: #bde0fe;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-8px) scale(1.05);
+        background: #a2d2ff;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-8px);
+        }
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        Sushmitha
+    </div>
+
+    <div class="profile">
+        <img src="C:\Users\harsh\OneDrive\Pictures\WhatsApp Image 2026-03-23 at 10.51.22 AM.jpeg">
+        <p>Hello! I wanna go home</p>
+    </div>
+
+    <div class="side-box"></div>
+
+    <div class="cards">
+        <div class="card">City Engineering College</div>
+        <div class="card">KLE Independent PU College</div>
+        <div class="card">SJR Public School</div>
+    </div>
+
+</div>
+
+</body>
+</html>
